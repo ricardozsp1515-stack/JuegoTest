@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Plataformas - Estilo Mario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>Juego de Plataformas</h1>
+            <div class="game-info">
+                <div class="lives">Vidas: <span id="lives">3</span></div>
+                <div class="level">Nivel: <span id="level">1</span></div>
+            </div>
+        </div>
+        
+        <div class="game-screen">
+            <canvas id="gameCanvas" width="700" height="350"></canvas>
+            <div id="gameMessage" class="game-message hidden"></div>
+        </div>
+        
+        <div class="controls">
+            <p>Usa las flechas del teclado para moverte:</p>
+            <div class="control-keys">
+                <span>← →</span> Moverse
+                <span>↑ o Espacio</span> Saltar
+            </div>
+            <button id="restartBtn" class="restart-btn">Reiniciar Juego</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
